@@ -32,7 +32,7 @@ window.fetch=async(input,options={})=>{
 };
 window.energyDownload=async()=>{
  const r=await fetch('/api/export');const rows=await r.json();if(!r.ok){document.querySelector('#admin-status').textContent=rows.error;return}
- const csv='\ufeff'+['participation_id,D,I,S,C,desired_energy,question_version,completed_at_utc',...rows.map(r=>[r.id,...['D','I','S','C'].map(k=>r.scores[k]),r.need,r.version,r.created_at].join(','))].join('\r\n');
+ const csv='\ufeff'+['participation_id,D,I,S,C,desired_energy,question_version,quiz_count,completed_at_utc',...rows.map(r=>[r.id,...['D','I','S','C'].map(k=>r.scores[k]),r.need,r.version,r.quiz_count,r.created_at].join(','))].join('\r\n');
  const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download='TEAM_ENERGY_응답.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 };
 })();
