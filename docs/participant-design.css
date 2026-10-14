@@ -25,3 +25,6 @@ footer{align-items:center;gap:16px}.research-brand{display:block!important;posit
 .energy-grid{gap:12px}.energy-tile{gap:12px;padding:12px;min-height:148px}.energy-tile svg{width:65px;height:65px;flex-shrink:0}.energy-tile span{font-size:24px}
 .closing-tokens .energy-token{width:96px;height:96px;flex-basis:96px;flex-direction:column;gap:4px;font-size:15px;border-width:5px;padding:0 0 2px}.closing-tokens svg{width:38px;height:38px;flex-shrink:0}.closing-tokens span{line-height:1.2}.closing-tokens{gap:16px}.research-intro{margin-top:12px;color:#6b7684;line-height:1.7;font-size:14px}
 @media(max-width:760px){.energy-tile{min-height:126px;gap:8px}.energy-tile svg{width:52px;height:52px}.energy-tile span{font-size:21px}.closing-tokens{gap:8px}.closing-tokens .energy-token{width:72px;height:72px;flex-basis:72px;border-width:4px;font-size:13px;gap:3px}.closing-tokens svg{width:29px;height:29px}footer{padding:16px 20px;flex-wrap:wrap}.research-brand{margin-left:auto}.research-intro{font-size:13px}}
+
+/* Show the complete original k-DISC logo, including its slogan. */
+.brand-logo{height:auto;overflow:visible}.brand-logo img{width:125px;height:auto}
