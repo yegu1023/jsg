@@ -28,3 +28,6 @@ footer{align-items:center;gap:16px}.research-brand{display:block!important;posit
 
 /* Show the complete original k-DISC logo, including its slogan. */
 .brand-logo{height:auto;overflow:visible}.brand-logo img{width:125px;height:auto}
+
+/* Research logo: 15% larger, original aspect ratio preserved. */
+.research-brand{width:184px;height:31px;flex-basis:184px}.research-brand img{width:201.378px;left:-8.686px;top:-25.45px}
